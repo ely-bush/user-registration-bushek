@@ -13,7 +13,8 @@ public class UserRegistrationApplication {
         var userService = context.getBean(UserService.class);
         userService.registerUser(new User(1L, "John Doe",  "jdoe@example.com", "password123"));
         userService.registerUser(new User(2L, "Jane Smith",  "jsmith@example.com", "password456"));
-     //   userService.registerUser(new User(1L, "John Doe",  "jdoe@example.com", "password123"));
+
+        userService.registerUser(new User(1L, "John Doe",  "jdoe@example.com", "password123"));
     }
 
 }
